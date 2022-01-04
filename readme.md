@@ -27,7 +27,7 @@ docker run -it --rm lacledeslan/gamesvr-factorio ./ll-tests/gamesvr-factorio.sh;
 This assumes an empty map was generated, and saved to `app/saves/save.zip` inside of the Docker image.
 
 ```shell
-docker run -it --rm -p 34197:34197/udp /app/bin/x64/factorio --start-server app/saves/save.zip;
+docker run -it --rm -p 34197:34197/udp /app/bin/x64/factorio --start-server /app/saves/save.zip;
 ```
 
 ## Getting Started with Game Servers in Docker
