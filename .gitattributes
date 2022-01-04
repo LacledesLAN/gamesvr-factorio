@@ -1,0 +1,4 @@
+# Set default behavior to automatically normalize to linux line endings.
+* text=auto eol=lf
+
+*.png binary
