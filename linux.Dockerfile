@@ -35,11 +35,14 @@ RUN useradd --home /app --gid root --system Factorio &&`
     mkdir -p /app/saves &&`
     chown Factorio:root -R /app;
 
+# `RUN true` lines are work around for https://github.com/moby/moby/issues/36573
 COPY --chown=Factorio:root --from=factorio-builder /output/factorio /app
-
-RUN chmod +x /app/bin/x64;
+RUN true
 
 COPY --chown=Factorio:root /dist/linux /app
+
+RUN chmod +x /app/bin/x64 &&`
+    chmod +x /app/ll-tests/*.sh;
 
 WORKDIR /app
 
