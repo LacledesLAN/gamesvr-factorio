@@ -1,9 +1,7 @@
 # escape=`
 FROM lacledeslan/steamcmd:linux as factorio-builder
 
-ARG VERSION=1.1.50
-
-RUN wget -O /tmp/factorio.tar.xz https://www.factorio.com/get-download/"$VERSION"/headless/linux64 &&`
+RUN wget -O /tmp/factorio.tar.xz https://factorio.com/get-download/stable/headless/linux64 &&`
     tar -xJf /tmp/factorio.tar.xz -C /output;
 
 #=======================================================================
