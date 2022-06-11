@@ -4,7 +4,7 @@ Factorio is a game in which you build and maintain factories. In the beginning y
 
 ![Factorio Dedicated Server in Docker](https://raw.githubusercontent.com/LacledesLAN/gamesvr-factorio/main/.misc/banner-gamesvr-factorio.jpg)
 
-This repository is maintained by [Laclede's LAN](https://lacledeslan.com). Its contents are intended to be bare-bones and used as a stock server. For examples of building a customized server from this Docker image browse its related child-project [gamesvr-factorio-freeplay](https://github.com/LacledesLAN/gamesvr-factorio-freeplay). If any documentation is unclear or it has any issues please see [CONTRIBUTING.md](./CONTRIBUTING.md).
+This repository is maintained by [Laclede's LAN](https://lacledeslan.com). This image contains a minimal Factorio server. For more advance usages see [factoriotools/factorio](https://hub.docker.com/r/factoriotools/factorio). If any of the documentation in this repository is unclear, or has  issues, please see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ## Linux
 
